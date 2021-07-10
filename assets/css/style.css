@@ -1,0 +1,35 @@
+html,
+body {
+    background-color: #0A0B0F;
+    height: 100%;
+	text-align: center;
+}
+
+input[type=text] {
+    background-color: #03723c;
+    border: 1px solid #111216;
+    color: white;
+}
+
+input[type=text]:focus {
+    background-color: #03723c;
+    color: white;
+}
+
+div.jumbotron {
+    background-color: #111216;
+}
+
+h1,
+p,
+label {
+    color: #d4d8d7;
+}
+
+div.footer-copyright p {
+    color: #858787;
+}
+
+#password {
+    color: #adffff;
+}
