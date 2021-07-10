@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Password Generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4 font-weight-bold">Online Password Generator</h1>
+        <p>Use this website to create a random, strong password.</p>
+    </div>
+
+    <div class="container">
+        <div class="form-group">
+            <label>Password Length</label>
+            <input type="text" class="form-control" id="pwLength" value="32" style="text-align:center;" />
+        </div>
+        <div class="form-group">
+			<button type="button" id="btngen" class="btn btn-dark">Generate</button>
+            <button type="button" id="btncopy" class="btn btn-dark">Copy to clipboard</button>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p class="text-secondary small" id="shpwlength">Password length will appear here.</p>
+                <p class="text-center text-success text-monospace" id="shgenpw">Your password will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer font-small blue pt-4">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-secondary small">
+            <p>Passwords are generated locally and are not stored.<br>
+			It's recommended to use a password manager (LastPass, Bitwarden, etc) to store these passwords.</p>
+			<p><strong>Please note that some websites may not support these characters.<br>
+			Use this website at your own risk.</strong></p>
+			<p>
+				See the code on <a href="https://github.com/"> Github.</a><br>
+                <script>document.write(new Date().getFullYear())</script>                
+            </p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="assets/js/passwordGenerator.js"></script>
+</body>
+
+</html>
